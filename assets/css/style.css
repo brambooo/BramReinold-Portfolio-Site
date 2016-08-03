@@ -1,0 +1,109 @@
+/* MAIN CSS STYLESHEET* /
+
+/* ========================================
+GLOBAL
+======================================== */
+/*RESET EVERYTHING*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    color: #333;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+
+/*h1 {*/
+    /*font-size: 30px;*/
+/*}*/
+
+a {
+
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ========================================
+** INTRO SECTION
+======================================== */
+section.intro {
+    /*background: linear-gradient(#ffa949, transparent 50%),*/
+    /*linear-gradient(0deg, #fff, transparent),*/
+    /*#ffa949 ;*/
+    background: #3dabee;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+section.intro .content {
+
+}
+section.intro .content h1 {
+    font-size: 82px;
+    font-weight: 100;
+    letter-spacing: -5px;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+section.intro .content p {
+    color: white;
+    font-size: 24px;
+    margin: 0 0 10px 0;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+section.intro .scroll-down {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+section.intro .scroll-down img {
+    width: 50px;
+    height: 50px;
+}
+    /* ========================================
+    HEADER
+    ======================================== */
+nav {
+
+}
+nav ul {
+    list-style-type:  none;
+}
+nav li {
+    padding: 0 20px;
+    line-height: 80px;
+    display: inline-block;
+}
+nav li:last-child {
+    padding-right: 0;
+}
+nav li a:hover {
+    color: #eba14e;
+}
+
+nav li .active {
+    color: #eba14e;
+}
