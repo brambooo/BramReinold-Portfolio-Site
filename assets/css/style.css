@@ -14,7 +14,8 @@ html {
 }
 
 body {
-    color: #333;
+    color: #80878c;
+    background: #f7f9f8;
     font-family: "Source Sans Pro", sans-serif;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
@@ -23,15 +24,15 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: white;
+    color: #3dabee;
 }
-
-/*h1 {*/
-    /*font-size: 30px;*/
-/*}*/
 
 a {
 
+}
+
+#content {
+    margin-top: 50px;
 }
 
 .wrapper {
@@ -59,6 +60,7 @@ section.intro .content {
 
 }
 section.intro .content h1 {
+    color: white;
     font-size: 82px;
     font-weight: 100;
     letter-spacing: -5px;
@@ -78,14 +80,39 @@ section.intro .scroll-down {
     margin: 0 auto;
     text-align: center;
     color: white;
+    font-size: 20px;
+    color: #90cef5;
+    font-style: italic;
 }
 section.intro .scroll-down img {
     width: 50px;
     height: 50px;
 }
-    /* ========================================
-    HEADER
-    ======================================== */
+
+/* ========================================
+** PROJECTS SECTION
+======================================== */
+section .intro-text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+section .intro-text h1 {
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+section .intro-text p {
+    font-size: 20px;
+}
+section.projects .project-block {
+    width: 100%;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+}
+/* ========================================
+HEADER
+======================================== */
 nav {
 
 }
