@@ -2,29 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="NL">
     <title>Bram Reinold - Portfolio</title>
 
+    <meta name="webdeveloper" content="Bram Reinold - Portfolio">
+    <meta name="author" content="Bram Reinold">
+    <meta name="description" content="Het portfolio van Bram Reinold, Junior Webdeveloper te Breda.">
+
     <!-- CUSTOM STYLESHEETS -->
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/custom_main.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/custom_skill_bar.css" type="text/css">
 
     <!--[if lt IE 9]>
     <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
     <![endif]-->
 </head>
 <body>
+
+
+
     <!--
     ## INTRO SECTION
     -->
     <section class="intro">
         <div class="content">
+            <img src="assets/img/bram-reinold-profile-image.jpg" alt="Bram Reinold afbeelding" class="icon-bram">
             <h1>Bram Reinold</h1>
-            <p>Portfolio</p>
+            <p>Junior Webdeveloper</p>
         </div><!-- end content-->
         <div class="scroll-down">
             Bekijk het portfolio door naar beneden te scrollen!<br>
             <img src="assets/img/icon-arrow-white-down.png" alt="naar beneden scroll icoon" width="10%">
         </div><!-- end scroll-down-->
     </section><!-- end section intro-->
+
+
+
 
     <!-- CONTENT -->
     <div id="content" class="wrapper">
@@ -34,7 +47,7 @@
         -->
         <section class="projects">
             <div class="intro-text">
-                <h1>Mijn actuele projecten</h1>
+                <h1>Projecten</h1>
                 <p>Deze projecten zijn tijdens mijn opleiding Informatica aan de Avans Hogeschool te Breda gemaakt of op aanvraag.</p>
             </div>
 
@@ -47,14 +60,20 @@
             </div>
 
             <div class="project-block">
-                <div class="project-info">
-                    <div class="title">Project 1</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat ligula sit amet sem fermentum, sed mattis ante facilisis.
-                        Suspendisse dictum ligula eu purus elementum cursus. Curabitur imperdiet rutrum nunc, ullamcorper fringilla massa ultricies vitae.
-                        Integer sed nibh commodo, elementum leo rutrum, finibus elit. Pellentesque aliquam libero neque.
-                    </p>
+                <div class="project-left">
+                    <div class="project-info">
+                        <div class="title">Poezendorp van der Vorst</div>
+                        <p>Is een kattenpension website. Deze website is ontwikkeld voor het Wordpress CMS en hiervoor is een geheel eigen template ontwikkeld. Op deze website is het mogelijk om online te reserveren.
+                        </p>
+                    </div>
+                    <div class="project-buttons">
+                        <div class="button">Project informatie</div>
+                        <a class="button" href="http://poezendorpvandervorst.nl/" target="_blank">Website</a>
+                    </div>
                 </div>
-                <img class="project-image" src="" alt="">
+                <div class="project-right">
+                    <img class="project-image" src="" alt="">
+                </div>
             </div><!-- end project-block-->
 
             <div class="project-block">
@@ -80,25 +99,44 @@
             </div><!-- end project-block-->
         </section><!-- end section projects-->
 
+        <!--
+        ## PROJECTS SECTION
+        -->
+        <section id=skills">
+            <div class="intro-text">
+                <h1>Skills</h1>
+                <p>Hieronder vind je mijn programmeer specialiteiten en welke doelen ik in de toekomst wil gaan behalen!</p>
+            </div>
+
+            <div class="skills">
+                <!--https://codepen.io/tamak/pen/hzEer-->
+                <div class="skill-bar">
+                    <span class="skill-name">HTML5</span>
+                    <span class="kill-percentage">90%</span>
+                </div>
+            </div>
+        </section>
     </div><!-- end content-->
 
-    <header>
-        <div class="wrapper"></div>
-        <div class="logo">Bram Reinold</div>
-        <nav id="main-menu">
-            <ul class="menu-sections">
-                <li>Home</li>
-                <li>Projecten</li>
-                <li>Contact</li>
-            </ul>ccvvv
-        </nav>
-    </header>
+    <!--<header>-->
+        <!--<div class="wrapper"></div>-->
+        <!--<div class="logo">Bram Reinold</div>-->
+        <!--<nav id="main-menu">-->
+            <!--<ul class="menu-sections">-->
+                <!--<li>Home</li>-->
+                <!--<li>Projecten</li>-->
+                <!--<li>Contact</li>-->
+            <!--</ul>ccvvv-->
+        <!--</nav>-->
+    <!--</header>-->
     <footer>
         © 2016 - Bram Reinold -
-        <ul>
-            <li><a href="https://github.com/brambooo/" target="_blank"> GitHub </a></li>
-            <li><a href="https://www.linkedin.com/in/bram-reinold-a343a266" target="_blank"> LinkedIn </a></li>
-        </ul>
+        <!--<ul>-->
+            <!--<li><a href="https://github.com/brambooo/" target="_blank"> GitHub </a></li>-->
+            <!--<li><a href="https://www.linkedin.com/in/bram-reinold-a343a266" target="_blank"> LinkedIn </a></li>-->
+        <!--</ul>-->
     </footer>
 </body>
+<!-- CUSTOM STYLESHEETS -->
+<script src="assets/js/custom.js" type="javascript"></script>
 </html>

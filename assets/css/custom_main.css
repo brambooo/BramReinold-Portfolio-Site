@@ -16,7 +16,8 @@ html {
 body {
     color: #80878c;
     background: #f7f9f8;
-    font-family: "Source Sans Pro", sans-serif;
+    /*font-family: "Source Sans Pro", sans-serif;*/
+    font-family: Raleway , Open-sans, sans-serif;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     height: 100%;
@@ -55,6 +56,19 @@ section .intro-text p {
     font-size: 20px;
 }
 
+.button {
+    border-radius: 4px;
+    padding: 10px;
+    display: inline-block;
+    background: #525252;
+    color: white;
+    text-decoration: none;
+}
+.button:hover {
+    background: #3dabee;
+}
+
+
 /* ========================================
 ** INTRO SECTION
 ======================================== */
@@ -71,15 +85,25 @@ section.intro {
     justify-content: center;
     text-align: center;
 }
+.icon-bram {
+    /*-webkit-border-radius: 50%;*/
+    /*-moz-border-radius: 50%;*/
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background: white;
+    border: 2px solid white;
+}
 section.intro .content {
 
 }
 section.intro .content h1 {
+    font-weight: bold;
     color: white;
     font-size: 82px;
-    font-weight: 100;
-    letter-spacing: -5px;
+    letter-spacing: -3px;
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    margin: 50px 0;
 }
 section.intro .content p {
     color: white;
@@ -95,13 +119,14 @@ section.intro .scroll-down {
     margin: 0 auto;
     text-align: center;
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     color: #90cef5;
     font-style: italic;
 }
 section.intro .scroll-down img {
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
+    margin-top: 10px;
 }
 
 /* ========================================
@@ -135,10 +160,17 @@ section.projects .project-block {
     border-radius: 4px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
     padding: 25px;
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     margin-bottom: 30px;
 }
-section.projects .project-block .project-info {
+section.projects .project-block .project-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section.projects .project-block .project-left .project-info {
     float: left;
     width: 60%;
 }
