@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="assets/css/custom_main.css" type="text/css">
     <link rel="stylesheet" href="assets/css/custom_skill_bar.css" type="text/css">
 
+    <!-- INCLUDED SCRIPTS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
     <!--[if lt IE 9]>
     <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
     <![endif]-->
@@ -21,122 +24,203 @@
 
 
 
-    <!--
-    ## INTRO SECTION
-    -->
-    <section class="intro">
-        <div class="content">
-            <img src="assets/img/bram-reinold-profile-image.jpg" alt="Bram Reinold afbeelding" class="icon-bram">
-            <h1>Bram Reinold</h1>
-            <p>Junior Webdeveloper</p>
-        </div><!-- end content-->
-        <div class="scroll-down">
-            Bekijk het portfolio door naar beneden te scrollen!<br>
-            <img src="assets/img/icon-arrow-white-down.png" alt="naar beneden scroll icoon" width="10%">
-        </div><!-- end scroll-down-->
-    </section><!-- end section intro-->
-
-
-
-
-    <!-- CONTENT -->
-    <div id="content" class="wrapper">
-
-        <!--
-        ## PROJECTS SECTION
-        -->
-        <section class="projects">
-            <div class="intro-text">
-                <h1>Projecten</h1>
-                <p>Deze projecten zijn tijdens mijn opleiding Informatica aan de Avans Hogeschool te Breda gemaakt of op aanvraag.</p>
-            </div>
-
-            <div class="projects-filter">
-                <strong>Sorteer op:</strong>
-                <div class="filter-button active">Actueel</div>
-                <div class="filter-button">Ouder</div>
-                <div class="filter-button">School</div>
-                <div class="filter-button">Eigen projecten</div>
-            </div>
-
-            <div class="project-block">
-                <div class="project-left">
-                    <div class="project-info">
-                        <div class="title">Poezendorp van der Vorst</div>
-                        <p>Is een kattenpension website. Deze website is ontwikkeld voor het Wordpress CMS en hiervoor is een geheel eigen template ontwikkeld. Op deze website is het mogelijk om online te reserveren.
-                        </p>
-                    </div>
-                    <div class="project-buttons">
-                        <div class="button">Project informatie</div>
-                        <a class="button" href="http://poezendorpvandervorst.nl/" target="_blank">Website</a>
-                    </div>
-                </div>
-                <div class="project-right">
-                    <img class="project-image" src="" alt="">
-                </div>
-            </div><!-- end project-block-->
-
-            <div class="project-block">
-                <div class="project-info">
-                    <div class="title">Project 1</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat ligula sit amet sem fermentum, sed mattis ante facilisis.
-                        Suspendisse dictum ligula eu purus elementum cursus. Curabitur imperdiet rutrum nunc, ullamcorper fringilla massa ultricies vitae.
-                        Integer sed nibh commodo, elementum leo rutrum, finibus elit. Pellentesque aliquam libero neque.
-                    </p>
-                </div>
-                <img class="project-image" src="" alt="">
-            </div><!-- end project-block-->
-
-            <div class="project-block">
-                <div class="project-info">
-                    <div class="title">Project 1</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat ligula sit amet sem fermentum, sed mattis ante facilisis.
-                        Suspendisse dictum ligula eu purus elementum cursus. Curabitur imperdiet rutrum nunc, ullamcorper fringilla massa ultricies vitae.
-                        Integer sed nibh commodo, elementum leo rutrum, finibus elit. Pellentesque aliquam libero neque.
-                    </p>
-                </div>
-                <img class="project-image" src="" alt="">
-            </div><!-- end project-block-->
-        </section><!-- end section projects-->
-
-        <!--
-        ## PROJECTS SECTION
-        -->
-        <section id=skills">
-            <div class="intro-text">
-                <h1>Skills</h1>
-                <p>Hieronder vind je mijn programmeer specialiteiten en welke doelen ik in de toekomst wil gaan behalen!</p>
-            </div>
-
-            <div class="skills">
-                <!--https://codepen.io/tamak/pen/hzEer-->
-                <div class="skill-bar">
-                    <span class="skill-name">HTML5</span>
-                    <span class="kill-percentage">90%</span>
-                </div>
-            </div>
-        </section>
+<!--
+## INTRO SECTION
+-->
+<section class="intro">
+    <div class="content">
+        <img src="assets/img/bram-reinold-profile-image.jpg" alt="Bram Reinold afbeelding" class="icon-bram">
+        <h1>Bram Reinold</h1>
+        <p>Junior Webdeveloper</p>
     </div><!-- end content-->
+    <div class="scroll-down">
+        Bekijk het portfolio door naar beneden te scrollen!<br>
+        <img src="assets/img/icon-arrow-white-down.png" alt="naar beneden scroll icoon" width="10%">
+    </div><!-- end scroll-down-->
+</section><!-- end section intro-->
 
-    <!--<header>-->
-        <!--<div class="wrapper"></div>-->
-        <!--<div class="logo">Bram Reinold</div>-->
-        <!--<nav id="main-menu">-->
-            <!--<ul class="menu-sections">-->
-                <!--<li>Home</li>-->
-                <!--<li>Projecten</li>-->
-                <!--<li>Contact</li>-->
-            <!--</ul>ccvvv-->
-        <!--</nav>-->
-    <!--</header>-->
-    <footer>
-        © 2016 - Bram Reinold -
-        <!--<ul>-->
-            <!--<li><a href="https://github.com/brambooo/" target="_blank"> GitHub </a></li>-->
-            <!--<li><a href="https://www.linkedin.com/in/bram-reinold-a343a266" target="_blank"> LinkedIn </a></li>-->
-        <!--</ul>-->
-    </footer>
+
+
+
+<!-- CONTENT -->
+<div id="content" class="wrapper">
+
+    <!--
+    ## PROJECTS SECTION
+    -->
+    <section class="projects">
+        <div class="intro-text">
+            <h1>Projecten</h1>
+            <p>Deze projecten zijn tijdens mijn opleiding Informatica aan de Avans Hogeschool te Breda gemaakt of op aanvraag.</p>
+        </div>
+
+        <div class="projects-filter">
+            <strong>Sorteer op:</strong>
+            <div class="filter-button active">Actueel</div>
+            <div class="filter-button">Ouder</div>
+            <div class="filter-button">School</div>
+            <div class="filter-button">Eigen projecten</div>
+        </div>
+
+        <div class="project-block">
+            <div class="project-left">
+                <div class="project-info">
+                    <div class="title">Poezendorp van der Vorst</div>
+                    <p>Is een kattenpension website. Deze website is ontwikkeld voor het Wordpress CMS en hiervoor is een geheel eigen template ontwikkeld. Op deze website is het mogelijk om online te reserveren.
+                    </p>
+                </div>
+                <div class="project-buttons">
+                    <div class="button">Project informatie</div>
+                    <a class="button" href="http://poezendorpvandervorst.nl/" target="_blank">Website</a>
+                </div>
+            </div>
+            <div class="project-right">
+                <img class="project-image" src="" alt="">
+            </div>
+        </div><!-- end project-block-->
+
+        <div class="project-block">
+            <div class="project-info">
+                <div class="title">Project 1</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat ligula sit amet sem fermentum, sed mattis ante facilisis.
+                    Suspendisse dictum ligula eu purus elementum cursus. Curabitur imperdiet rutrum nunc, ullamcorper fringilla massa ultricies vitae.
+                    Integer sed nibh commodo, elementum leo rutrum, finibus elit. Pellentesque aliquam libero neque.
+                </p>
+            </div>
+            <img class="project-image" src="" alt="">
+        </div><!-- end project-block-->
+
+        <div class="project-block">
+            <div class="project-info">
+                <div class="title">Project 1</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat ligula sit amet sem fermentum, sed mattis ante facilisis.
+                    Suspendisse dictum ligula eu purus elementum cursus. Curabitur imperdiet rutrum nunc, ullamcorper fringilla massa ultricies vitae.
+                    Integer sed nibh commodo, elementum leo rutrum, finibus elit. Pellentesque aliquam libero neque.
+                </p>
+            </div>
+            <img class="project-image" src="" alt="">
+        </div><!-- end project-block-->
+    </section><!-- end section projects-->
+
+    <!--
+    ## PROJECTS SECTION
+    -->
+    <section id=skills">
+
+        <div class="intro-text">
+            <h1>Skills</h1>
+            <p>Hieronder vind je mijn programmeer specialiteiten en welke doelen ik in de toekomst wil gaan behalen!</p>
+        </div>
+
+        <div class="skills">
+            <!--https://codepen.io/tamak/pen/hzEer-->
+
+            <div class="skill-bar" data-percent="90%">
+                <div class="skill-bar-title" style="background: #d35400;">
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-bar-loadingbar" style="background: #e67e22;"></div>
+                <span class="skill-bar-percentage">90%</span>
+            </div><!-- End skill-bar -->
+
+            <div class="skill-bar" data-percent="85%">
+                <div class="skill-bar-title" style="background: #2980b9;">
+                    <span>CSS3</span>
+                </div>
+                <div class="skill-bar-loadingbar" style="background: #3498db;"></div>
+                <span class="skill-bar-percentage">85%</span>
+            </div><!-- End skill-bar -->
+
+            <div class="skill-bar" data-percent="75%">
+                <div class="skill-bar-title" style="background: #46465e">
+                    <span>PHP</span>
+                </div>
+                <div class="skill-bar-loadingbar" style="background: #5a68a5;"></div>
+                <span class="skill-bar-percentage">75%</span>
+            </div><!-- End skill-bar -->
+
+            <div class="skill-bar" data-percent="75%">
+                <div class="skill-bar-title" style="background: #333333;">
+                    <span>Wordpress</span>
+                </div>
+                <div class="skill-bar-loadingbar" style="background: #525252;"></div>
+                <span class="skill-bar-percentage">75%</span>
+            </div><!-- End skill-bar -->
+
+            <div class="skill-bar" data-percent="50%">
+                <div class="skill-bar-title" style="background: #d35400;">
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-bar-loadingbar" style="background: #e67e22;"></div>
+                <span class="skill-bar-percentage">90%</span>
+            </div><!-- End skill-bar -->
+
+            <div class="skill-bar" data-percent="50%">
+                <div class="skill-bar-title" style="background: #d35400;">
+                    <span>jQuery</span>
+                </div>
+                <div class="skill-bar-loadingbar" style="background: #e67e22;"></div>
+                <span class="skill-bar-percentage">90%</span>
+            </div><!-- End skill-bar -->
+
+            <div class="skill-bar" data-percent="50%">
+                <div class="skill-bar-title" style="background: #d35400;">
+                    <span>Java</span>
+                </div>
+                <div class="skill-bar-loadingbar" style="background: #e67e22;"></div>
+                <span class="skill-bar-percentage">90%</span>
+            </div><!-- End skill-bar -->
+
+            <div class="skill-bar" data-percent="50%">
+                <div class="skill-bar-title" style="background: #d35400;">
+                    <span>C#</span>
+                </div>
+                <div class="skill-bar-loadingbar" style="background: #e67e22;"></div>
+                <span class="skill-bar-percentage">90%</span>
+            </div><!-- End skill-bar -->
+
+            <div class="skill-bar" data-percent="70%">
+                <div class="skill-bar-title" style="background: #008e2d;">
+                    <span>Android</span>
+                </div>
+                <div class="skill-bar-loadingbar" style="background: #00b23a;"></div>
+                <span class="skill-bar-percentage">70%</span>
+            </div><!-- End skill-bar -->
+
+            <div class="skill-bar" data-percent="50%">
+                <div class="skill-bar-title" style="background: #124e8c;">
+                    <span>Photoshop</span>
+                </div>
+                <div class="skill-bar-loadingbar" style="background: #4288d0;"></div>
+                <span class="skill-bar-percentage">90%</span>
+            </div><!-- End skill-bar -->
+
+        </div>
+
+    </section>
+</div><!-- end content-->
+
+<!--<header>-->
+<!--<div class="wrapper"></div>-->
+<!--<div class="logo">Bram Reinold</div>-->
+<!--<nav id="main-menu">-->
+<!--<ul class="menu-sections">-->
+<!--<li>Home</li>-->
+<!--<li>Projecten</li>-->
+<!--<li>Contact</li>-->
+<!--</ul>ccvvv-->
+<!--</nav>-->
+<!--</header>-->
+<footer>
+    © 2016 - Bram Reinold -
+    <!--<ul>-->
+    <!--<li><a href="https://github.com/brambooo/" target="_blank"> GitHub </a></li>-->
+    <!--<li><a href="https://www.linkedin.com/in/bram-reinold-a343a266" target="_blank"> LinkedIn </a></li>-->
+    <!--</ul>-->
+</footer>
+
+<!-- CORE CUSTOM SCRIPTS -->
+<script src="assets/js/custom.js"></script>
+
 </body>
-<!-- CUSTOM STYLESHEETS -->
-<script src="assets/js/custom.js" type="javascript"></script>
 </html>

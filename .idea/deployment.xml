@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="bramreinold.nl" uploadOnCheckin="50be811f-49c0-4a5f-84e4-3bda9940e2cb">
+    <serverData>
+      <paths name="bram.mai-web">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="bramreinold.nl">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/portfolio_nieuw" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="dev.tonhamers.nl">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myUploadOnCheckinName" value="bramreinold.nl" />
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
