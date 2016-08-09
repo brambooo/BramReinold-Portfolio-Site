@@ -3,6 +3,9 @@ $(document).ready(function() {
     // Setup sticky header
     $('header').stick_in_parent();
 
+    // Setup page scrolling
+    $('#main-menu').fullpage();
+
     // Add scrolling effects
     window.sr = ScrollReveal();
     sr.reveal('#intro .content img', {viewFactor: 0.1, duration: 1000, distance: '50px'});
@@ -36,7 +39,7 @@ $(document).ready(function() {
     // Loop through all skill-bar divs
     $('.skill-bar').each(function(){
         var iWidth = $(this).attr('data-percent');
-        console.log(iWidth);
+        //console.log(iWidth);
 
         $(this).find('.skill-bar-loadingbar').animate({
             width:iWidth

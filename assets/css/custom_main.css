@@ -101,11 +101,8 @@ section .intro-text p {
 ** INTRO SECTION
 ======================================== */
 section#intro {
-    /*background: linear-gradient(#ffa949, transparent 50%),*/
-    /*linear-gradient(0deg, #fff, transparent),*/
-    /*#ffa949 ;*/
     background: #3dabee;
-    background-image: url('../img/bg_mask_white.png');
+    background: url('../img/bg_mask_white.png') no-repeat, linear-gradient(#3dabee, #2dc2ee);
     height: 100%;
     width: 100%;
     display: flex;
@@ -115,8 +112,8 @@ section#intro {
     text-align: center;
 }
 .icon-bram {
-    /*-webkit-border-radius: 50%;*/
-    /*-moz-border-radius: 50%;*/
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -270,6 +267,7 @@ section#projects  .projects-filter .filter.btn.active {
 }
 .actions .btn:hover {
     background: #eeab48;
+    color: #fff;
 }
 
 /* ========================================
