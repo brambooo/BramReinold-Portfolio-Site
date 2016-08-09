@@ -41,8 +41,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.5090909">
-              <caret line="248" column="0" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
+            <state vertical-scroll-proportion="-4.309091">
+              <caret line="47" column="24" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="24" />
               <folding>
                 <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -74,8 +74,8 @@
       <file leaf-file-name="custom_main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/custom_main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.871407">
-              <caret line="393" column="18" selection-start-line="393" selection-start-column="18" selection-end-line="393" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.5128593">
+              <caret line="296" column="50" selection-start-line="296" selection-start-column="50" selection-end-line="296" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -631,8 +631,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.5090909">
-          <caret line="248" column="0" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
+        <state vertical-scroll-proportion="-4.309091">
+          <caret line="47" column="24" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="24" />
           <folding>
             <element signature="n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -662,8 +662,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/custom_main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.871407">
-          <caret line="393" column="18" selection-start-line="393" selection-start-column="18" selection-end-line="393" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.5128593">
+          <caret line="296" column="50" selection-start-line="296" selection-start-column="50" selection-end-line="296" selection-end-column="50" />
           <folding />
         </state>
       </provider>

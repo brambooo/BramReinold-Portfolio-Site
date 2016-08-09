@@ -22,6 +22,7 @@ html {
 }
 
 body {
+    position: relative;
     color: #80878c;
     background: #f7f9f8;
     /*font-family: "Source Sans Pro", sans-serif;*/
@@ -287,11 +288,21 @@ section#projects  .projects-filter .filter.btn.active {
 ======================================== */
 header {
     width: 100%;
-    height: 50px;
+    height: 70px;
     z-index: 999;
     background: #fff;
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.1);
 }
+header .logo {
+    background-image: url("../img/bramreinold-logo-small-white.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #3dabee;;
+    border-radius: 3px;
+    height: 41px;
+    width: 41px;
+}
+
 header .header-wrapper {
     display: flex;
     align-items: center;
