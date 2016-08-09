@@ -7,6 +7,8 @@ GLOBAL
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style-type: none;
 }
 
 html {
@@ -35,6 +37,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
+    color: #aeaeae;
+}
+a:hover {
+    color: #3dabee;
+    font-weight: bold;
+}
+a::after {
+    display:block;
+    content:attr(title);
+    font-weight:bold;
+    height:1px;
+    color:transparent;
+    overflow:hidden;
+    visibility:hidden;
 }
 
 #content {
@@ -304,6 +320,25 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 12px;
+}
+footer ul li:last-of-type {
+    margin-right: 0;
+}
+a::after {
+    display: block;
+    content:attr(title);
+    font-weight:bold;
+    height:1px;
+    color:transparent;
+    overflow:hidden;
+    visibility:hidden;
+    margin-bottom:-1px;
 }
 
 /**
