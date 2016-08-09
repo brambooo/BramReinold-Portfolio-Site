@@ -9,6 +9,19 @@ $(document).ready(function() {
     });
 
     /**
+     * Projects section
+     */
+
+    // When we hover make it visible when we leave the hover make it invisible
+    $('.project-hover').hover(function(){
+            $(this).animate({opacity:'1'});
+        },
+        function(){
+            $(this).animate({opacity:'0'});
+        }
+    );
+
+    /**
      * Skills section
      */
 
