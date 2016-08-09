@@ -4,7 +4,7 @@ $(document).ready(function() {
     $('header').stick_in_parent();
 
     // Setup page scrolling
-    $('#main-menu').fullpage();
+    //$('#main-menu').fullpage();
 
     // Add scrolling effects
     window.sr = ScrollReveal();
