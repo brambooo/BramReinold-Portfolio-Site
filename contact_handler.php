@@ -8,48 +8,34 @@
 
 echo "<pre>" . print_r($_POST, true) . "</pre>";
 
-// Get all form input values
-$name           = htmlentities(['name']);
-$email          = htmlentities($_POST['email']);
-$phone          = htmlentities($_POST['phone']);        // optional
-$message        = htmlentities($_POST['message']);
+// Validate form fields
+if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message'])) {
 
-// Send a simple mail to bram_reinold@hotmail.com when someone submit the form with above inputs
-// Param 1 =  receiver(s) of the email
-// Param 2 = subject
-// Param 3 = message
+    echo 'test';
 
-// Setup mail
-$header = "From: {$email}";
+    // Get all form input values
+    $name           = htmlentities($_POST['name']);
+    $email          = htmlentities($_POST['email']);
+    if(!empty($_POST['phone'])) {
+        $phone          = htmlentities($_POST['phone']);
+    } else {
+        $phone = "niet ingevuld";
+    }
+    $message        = htmlentities($_POST['message']);
 
-// Validate if phone is filled in
-if(empty($phone)) {
-    $phone = "niet ingevuld";
-}
-$message = "{$message}\n\n Contactgegevens: \n email: {$email} \n tel: {$phone}.";
-// Use wordwrap if lines are longes than 70 chars (lines cannot be longer than that)
+    // Send a simple mail to bram_reinold@hotmail.com when someone submit the form with above inputs
+    // Param 1 =  receiver(s) of the email
+    // Param 2 = subject
+    // Param 3 = message
 
-$to         = "info@bramreinold.nl";
-$subject    = "Bramreinold.nl - nieuw contactformulier bericht!";
+    // Setup mail
+    $header = "From: {$email}";
+    $message = "{$name}, heeft het volgende bericht gestuurd: \n {$message}\n\n Contactgegevens: \n naam: {$name} \n email: {$email} \n tel: {$phone}.";
+    $to         = "info@bramreinold.nl";
+    $subject    = "Bramreinold.nl - nieuw contactformulier bericht!";
 
-//    // Send message to receiver
-$mailStatus = mail($to, $subject, $message, $header);
-//$mailStatus = mail($to, "test", "bericht test");
+    // Send message to receiver
+    $mailStatus = mail($to, $subject, $message, $header);
 
-// Validate if mail is sent
-if($mailStatus) {
-    return true;
-} else {
-    return false;
 }
 
-
-//exit();
-
-// Validate if submit button is clicked.
-if(isset($_POST['submit'])) {
-
-
-   // $status = mail('bram_reinold@hotmail.com', "test", "bericht1");
-    //echo $status;
-}

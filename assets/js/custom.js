@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function(e) {
 
     // Setup sticky header
     $('header').stick_in_parent();
@@ -64,18 +64,40 @@ $(document).ready(function() {
     $('#contact-form').on('submit', function(e) {
         e.preventDefault();
 
-        // process the form with ajax
-        $.ajax({
-            type: 'POST',
-            url: 'contact_handler.php',
-            data: $(this).serialize()
-        }).done(function(data){
-            console.log(data);
-            $("#contact-form .form-user-info, textarea, input[type='submit']").hide();
-            $("#contact-form").html("<h2>Bedankt voor het invullen van het contactformulier. Er zal zo snel mogelijk op gereageerd worden!</h2>");
+        var formData = $(this).serialize();
+        console.log('verkregen data client: ' + formData);
 
-        });
+        // Call sendEmail method
+        sendEmail(formData);
+
+        //// Validate form fields
+        //$(this).attrvalidate({
+        //
+        //    // Enable inline validation
+        //    showFieldIndicator:true,
+        //
+        //    showErrorSummary:true,
+        //
+        //    // Call submit function when the validation is successful
+        //    submitFunction:sendEmail($(this).serialize)
+        //
+        //});
+
     });
 
-
 }); // end ready
+
+// Client side validation accomplished with an Ajax POST request and handle the form validation with PHP on the server side.
+function sendEmail(data) {
+
+    $.ajax({
+        type: 'POST',
+        url: 'contact_handler.php',
+        data: data
+    }).done(function (data) {
+        console.log(data);
+        $("#contact-form .form-user-info, textarea, input[type='submit']").hide();
+        $("#contact-form").html("<h4>Bedankt voor het invullen van het contactformulier. Er zal zo snel mogelijk op gereageerd worden!</h4>");
+    });
+
+} // end submitForm function

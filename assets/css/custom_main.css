@@ -375,6 +375,9 @@ section#contact .contact-wrapper {
 section#contact .contact-wrapper h2 {
     margin-bottom: 20px;
 }
+section#contact .contact-wrapper .contact-form {
+    max-width: 600px;
+}
 section#contact .contact-wrapper .contact-info span {
     margin-right: 10px;
 }
