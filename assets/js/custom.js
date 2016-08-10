@@ -71,7 +71,9 @@ $(document).ready(function() {
             data: $(this).serialize()
         }).done(function(data){
             console.log(data);
-            alert('Bedankt voor het invullen!');
+            $("#contact-form .form-user-info, textarea, input[type='submit']").hide();
+            $("#contact-form").html("<h2>Bedankt voor het invullen van het contactformulier. Er zal zo snel mogelijk op gereageerd worden!</h2>");
+
         });
     });
 
