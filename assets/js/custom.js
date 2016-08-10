@@ -3,6 +3,16 @@ $(document).ready(function() {
     // Setup sticky header
     $('header').stick_in_parent();
 
+    // Check if main-header is sticky
+    if(!$('#main-header').hasClass('.is_stuck')){
+        // isn't sticky
+        console.log('niet sticky');
+        $(this).hide();
+    } else {
+        // remove hidden class
+        console.log('sticky');
+        $(this).show();
+    }
     // Setup page scrolling
     //$('#main-menu').fullpage();
 
@@ -44,6 +54,25 @@ $(document).ready(function() {
         $(this).find('.skill-bar-loadingbar').animate({
             width:iWidth
         }, 6000);
+    });
+
+    /**
+     * Contact section
+     */
+
+    // Client side validation accomplished with an Ajax POST request and handle the form validation with PHP on the server side.
+    $('#contact-form').on('submit', function(e) {
+        e.preventDefault();
+
+        // process the form with ajax
+        $.ajax({
+            type: 'POST',
+            url: 'contact_handler.php',
+            data: $(this).serialize()
+        }).done(function(data){
+            console.log(data);
+            alert('Bedankt voor het invullen!');
+        });
     });
 
 
