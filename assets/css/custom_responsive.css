@@ -1,0 +1,97 @@
+/*
+In this stylesheet will be added all media queries to make the website responsive.
+*/
+
+/* ========================================
+** IPAD LANDSCAPE WIDTH and below
+======================================== */
+@media all and (max-device-width: 1024px) {
+
+    header .header-wrapper,
+    #content {
+        margin: 0 25px;
+    }
+
+}
+
+/* ========================================
+** IPHONE 6 + LANDSCAPE and below
+======================================== */
+@media all and (max-device-width: 736px) {
+
+    #content {
+        padding: 0 30px;
+    }
+
+    section .intro-text h1 {
+        font-size: 70px;
+    }
+    h2 {
+        font-size: 50px;
+        margin: 30px 0;
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    input, textarea {
+        padding: 0;
+    }
+
+    header .header-wrapper,
+    #content {
+        margin: 0 25px;
+    }
+
+    section#contact .contact-wrapper {
+        flex-direction: column;
+    }
+    section#contact .contact-wrapper .contact-info {
+        margin:0 auto;
+        text-align: center;
+    }
+    section#contact .contact-wrapper .contact-info h2,
+    section#contact .contact-wrapper .contact-form h2 {
+        margin: 50px 0 80px 0;
+    }
+    section#contact .contact-wrapper .contact-info p {
+        font-size: 40px;
+    }
+
+    section#contact .contact-wrapper .contact-info,
+    section#contact .contact-wrapper .contact-form {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    section#contact .contact-wrapper .contact-form .form-user-info input,
+    section#contact .contact-wrapper .contact-form textarea {
+        width: 100%;
+        height: 150px;
+        font-size: 30px;
+    }
+    section#contact .contact-wrapper .contact-form .form-user-info input::-webkit-input-placeholder {
+        padding-left: 30px;
+    }
+
+    .custom-textarea::-webkit-input-placeholder {
+        padding-top: 60px;
+        padding-left: 30px;
+    }
+
+
+    section#contact .contact-wrapper input[type="submit"] {
+        font-size: 50px;
+        padding: 20px;
+        width: 100%;
+        height: 150px;
+    }
+
+    footer ul li {
+        font-size: 20px;
+    }
+
+
+}
