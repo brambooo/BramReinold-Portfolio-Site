@@ -190,8 +190,6 @@ section#projects  .projects-filter .filter.btn.active {
     background: #3dabee;
 }
 
-/* START TEST ------------------------------------------------------------------- */
-
 .project-container {
     text-align: justify;
     font-size: 0.1px;
@@ -222,6 +220,14 @@ section#projects  .projects-filter .filter.btn.active {
     box-shadow: 0 1px 2px #aaa;
     height: 250px;
 }
+
+.close-animatedModal {
+    width:100%;
+    text-align: center;
+    cursor:pointer;
+    color:#fff;
+}
+
 /*
 ## SETUP PROJECTS IMAGES
 */
@@ -407,4 +413,23 @@ section#contact .contact-wrapper input[type="submit"]:hover {
 }
 section#contact .contact-wrapper  a {
     color: #3dabee;
+}
+
+
+
+
+
+/* ========================================
+** Project page
+======================================== */
+#project-page .content {
+    margin-top: 30px;
+}
+
+#project-page .content img {
+    background: #3dabee;
+    border-radius: 4px;
+    -moz-box-shadow: 0 1px 2px #aaa;
+    -webkit-box-shadow: 0 1px 2px #aaa;
+    box-shadow: 0 1px 2px #aaa;
 }

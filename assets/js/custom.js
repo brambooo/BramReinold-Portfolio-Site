@@ -1,20 +1,24 @@
 $(document).ready(function(e) {
 
-    // Setup sticky header
-    $('header').stick_in_parent();
+    /**
+     * Fixed header
+     */
 
-    // Check if main-header is sticky
-    if(!$('#main-header').hasClass('.is_stuck')){
-        // isn't sticky
-        console.log('niet sticky');
-        $(this).hide();
-    } else {
-        // remove hidden class
-        console.log('sticky');
-        $(this).show();
-    }
-    // Setup page scrolling
-    //$('#main-menu').fullpage();
+    // get the current offset of the header to the top of the document page
+    var headerTopSize = $('#main-header').offset().top;
+    //console.log('offset top main header: ' + headerTopSize);
+
+    // Check if user is scrolling
+    $(window).scroll(function() {
+        // Validate if the scrolling height is greater than the given headerTopSize
+        if( $(this).scrollTop() > headerTopSize ) {
+            // If so, main-header is set fixed to top
+            $('#main-header').css({position: 'fixed', top: '0px'});
+        } else {
+            // if not, make it static again (so header isn't fixed anymore)
+            $('#main-header').css({position: 'static', top: '0px'});
+        }
+    }); // end fixed header
 
     // Add scrolling effects
     window.sr = ScrollReveal();
@@ -41,6 +45,11 @@ $(document).ready(function(e) {
             $(this).animate({opacity:'0'});
         }
     );
+
+    // Initialize animatedModal
+    $('#openProjectModal').animatedModal({
+        color: 333
+    });
 
     /**
      * Skills section

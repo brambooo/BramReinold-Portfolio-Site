@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-language" content="NL">
+    <title>Bram Reinold - Portfolio</title>
+
+    <meta name="webdeveloper" content="Bram Reinold - Portfolio">
+    <meta name="author" content="Bram Reinold">
+    <meta name="description" content="Het portfolio van Bram Reinold, Junior Webdeveloper te Breda.">
+
+    <!-- SETUP FAVICON -->
+    <!--<link rel="shortcut " href="assets/img/favicon.png">-->
+
+    <!-- INCLUDED STYLESHEETS -->
+    <link rel="stylesheet" href="assets/css/custom_main.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/custom_skill_bar.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <!-- INCLUDED SCRIPTS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+<div id="project-page" class="wrapper">
+
+    <section class="content">
+        <h1>Poezendorp van der Vorst</h1>
+
+        <h4>Projectinformatie:</h4>
+        <p>Dit project is </p>
+
+    </section>
+
+    <section class="project-images">
+        <img src="assets/img/projects/bramreinold-portfolio-ronvanrielschilderwerken.jpg" alt="Project poezendorp">
+        <img src="assets/img/projects/bramreinold-portfolio-ronvanrielschilderwerken.jpg" alt="Project poezendorp">
+    </section>
+
+    
+</div>
+
+<div class="btn" onclick="history.go(-1)">Terug</div>
+
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.project-images').slick({
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 3,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+
+</body>
+</html>
