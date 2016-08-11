@@ -2,6 +2,13 @@
 In this stylesheet will be added all media queries to make the website responsive.
 */
 
+.show-on-mobile {
+    display: block;
+}
+.hide-on-mobile {
+
+}
+
 /* ========================================
 ** IPAD LANDSCAPE WIDTH and below
 ======================================== */
@@ -44,6 +51,35 @@ In this stylesheet will be added all media queries to make the website responsiv
         margin: 0 25px;
     }
 
+    /* ========================================
+    ** PROJECT SECTION
+    ======================================== */
+    section#projects .projects-filter {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    section#projects .projects-filter strong {
+        width: 100%;
+        display: block;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    section#projects .projects-filter .btn {
+        padding: 30px;
+        font-size: 30px;
+    }
+    section#projects .project {
+        width: 100%;
+        height: 400px;
+        margin-bottom: 40px;
+    }
+
+    /* ========================================
+    ** CONTACT SECTION
+    ======================================== */
     section#contact .contact-wrapper {
         flex-direction: column;
     }

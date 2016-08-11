@@ -70,7 +70,6 @@ $(document).ready(function(e) {
 
 
 
-
     // Add scrolling effects
     window.sr = ScrollReveal();
     sr.reveal('#intro .content img', {viewFactor: 0.1, duration: 1000, distance: '50px'});

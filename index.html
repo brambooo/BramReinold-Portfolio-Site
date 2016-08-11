@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="assets/css/custom_main.css" type="text/css">
     <link rel="stylesheet" href="assets/css/custom_responsive.css" type="text/css">
     <link rel="stylesheet" href="assets/css/custom_skill_bar.css" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+          type="text/css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
 
     <!-- INCLUDED SCRIPTS  -->
@@ -46,7 +47,9 @@
 
 <header id="main-header" class="fixed-header">
     <div class="wrapper header-wrapper">
-        <a href=""><div class="logo"></div></a>
+        <a href="">
+            <div class="logo"></div>
+        </a>
         <nav id="main-menu">
             <ul>
                 <li><a href="#projects" title="Projecten">Projecten</a></li>
@@ -79,6 +82,13 @@
             <!--<div class="filter btn" data-filter=".cat-school">School</div>-->
             <!--<div class="filter btn" data-filter=".cat-eigen">Eigen opdrachten</div>-->
         </div>
+
+
+        <!--<select id="mobile-projectfilter" class="show-on-mobile hide-on-desktop">-->
+            <!--<option data-filter="all">Alle</option>-->
+            <!--<option class="filter active" data-filter=".cat-web">Web</option>-->
+            <!--<option data-filter=".cat-app">App</option>-->
+        <!--</select>-->
 
         <div id="container" class="project-container">
 
@@ -146,7 +156,7 @@
         </div>
 
         <div class="modal-content">
-           <div class="project-title">Poezendorp van der Vorst</div>
+            <div class="project-title">Poezendorp van der Vorst</div>
             <h1>Poezendorp van der Vorst</h1>
 
             <h4>Projectinformatie:</h4>
@@ -261,25 +271,30 @@
 
             <div class="contact-info">
                 <h2>Contactgegevens</h2>
-                <p><span class="fa fa-phone"></span>  info@bramreinold.nl</p>
-                <p><span class="fa fa-envelope"></span>  +31 (0)6 18 69 24 51</p>
-                <li><a href="https://github.com/brambooo/" target="_blank" title="GitHub"><p><span class="fa fa-github"></span>  GitHub</p></a>
-                <a href="https://www.linkedin.com/in/bram-reinold-a343a266" target="_blank" title="LinkedIn"><p><span class="fa fa-linkedin"></span>  LinkedIn</p></a>
+                <p><span class="fa fa-phone"></span> info@bramreinold.nl</p>
+                <p><span class="fa fa-envelope"></span> +31 (0)6 18 69 24 51</p>
+                <li><a href="https://github.com/brambooo/" target="_blank" title="GitHub"><p><span
+                        class="fa fa-github"></span> GitHub</p></a>
+                    <a href="https://www.linkedin.com/in/bram-reinold-a343a266" target="_blank" title="LinkedIn"><p>
+                        <span class="fa fa-linkedin"></span> LinkedIn</p></a>
             </div><!-- end contact-info -->
-            
+
             <div class="contact-form">
                 <h2>Contactformulier</h2>
                 <form id="contact-form" action="#contact" method="post">
                     <div class="form-user-info">
-                        <input name="name" type="text" placeholder="Naam" required data-error-msg="Het naam veld is verplicht">
-                        <input name="email" type="email" placeholder="Email" required required data-error-msg="Email is verplicht">
+                        <input name="name" type="text" placeholder="Naam" required
+                               data-error-msg="Het naam veld is verplicht">
+                        <input name="email" type="email" placeholder="Email" required required
+                               data-error-msg="Email is verplicht">
                         <input name="phone" type="text" placeholder="Telefoon">
                     </div>
-                    <textarea class="custom-textarea" name="message" cols="30" rows="1"placeholder="Bericht" required data-error-msg="We need to know who you are"></textarea>
+                    <textarea class="custom-textarea" name="message" cols="30" rows="1" placeholder="Bericht" required
+                              data-error-msg="We need to know who you are"></textarea>
                     <input name="submit" type="submit">
                 </form>
             </div>
-            
+
         </div><!-- end contact-wrapper -->
 
     </section>
@@ -300,9 +315,10 @@
 <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
 <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
 <script src="assets/js/custom.js"></script>
+<script src="assets/js/custom_responsive.js"></script>
 
 <script>
-//    $("#demo01").animatedModal();
+    //    $("#demo01").animatedModal();
 </script>
 
 </body>
