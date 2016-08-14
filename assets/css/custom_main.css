@@ -11,6 +11,11 @@ GLOBAL
     list-style-type: none;
 }
 
+/* Hidden divs */
+.mobile-nav-wrapper {
+    display: none;
+}
+
 html {
     height: 100%;
 }
@@ -73,6 +78,10 @@ input, textarea {
 .wrapper {
     max-width: 1100px;
     margin: 0 auto;
+}
+.extra-spacing {
+    width: 100%;
+    height: 150px;
 }
 section {
    margin-top: 150px;
@@ -235,6 +244,19 @@ section#projects  .projects-filter .filter.btn.active {
 .project-container .mix:nth-of-type(1) {
     background-image: url('../img/projects/bramreinold-portfolio-ronvanrielschilderwerken.jpg');
 }
+.project-container .mix:nth-of-type(2) {
+    background-image: url('../img/projects/bramreinold-portfolio-segerenexpertise.jpg');
+}
+.project-container .mix:nth-of-type(3) {
+    background-image: url('../img/projects/bramreinold-portfolio-lionfuse.jpg');
+}
+.project-container .mix:nth-of-type(4) {
+    background-image: url('../img/projects/bramreinold-portfolio-webwinkel.jpg');
+}
+.project-container .mix:nth-of-type(5) {
+    background-image: url('../img/projects/bramreinold-portfolio-shopmate.jpg');
+}
+
 
 /*.container .mix:after{*/
     /*content: attr(data-myorder);*/
