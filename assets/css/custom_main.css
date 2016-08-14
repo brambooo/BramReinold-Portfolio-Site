@@ -248,15 +248,18 @@ section#projects  .projects-filter .filter.btn.active {
     background-image: url('../img/projects/bramreinold-portfolio-parketexclusief.jpg');
 }
 .project-container .mix:nth-of-type(3) {
-    background-image: url('../img/projects/bramreinold-portfolio-segerenexpertise.jpg');
+    background-image: url('../img/projects/bramreinold-portfolio-poezendorp.jpg');
 }
 .project-container .mix:nth-of-type(4) {
-    background-image: url('../img/projects/bramreinold-portfolio-lionfuse.jpg');
+    background-image: url('../img/projects/bramreinold-portfolio-segerenexpertise.jpg');
 }
 .project-container .mix:nth-of-type(5) {
-    background-image: url('../img/projects/bramreinold-portfolio-webwinkel.jpg');
+    background-image: url('../img/projects/bramreinold-portfolio-lionfuse.jpg');
 }
 .project-container .mix:nth-of-type(6) {
+    background-image: url('../img/projects/bramreinold-portfolio-webwinkel.jpg');
+}
+.project-container .mix:nth-of-type(7) {
     background-image: url('../img/projects/bramreinold-portfolio-shopmate.jpg');
 }
 
