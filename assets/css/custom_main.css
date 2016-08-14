@@ -109,6 +109,8 @@ section .intro-text p {
 }
 
 
+
+
 /* ========================================
 ** INTRO SECTION
 ======================================== */
@@ -335,6 +337,27 @@ nav#main-menu ul li a:hover {
 nav#main-menu ul li a.nav-active {
     color: #3dabee;
     font-weight: bold;
+}
+
+/* ========================================
+**  HEADER MOBILE
+======================================== */
+.mobile-menu-open-btn {
+    background-image: url("../img/open.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+.mobile-menu-close-btn {
+    background-image: url("../img/close.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+#main-menu-mobile {
+    display: none;
 }
 
 /* ========================================

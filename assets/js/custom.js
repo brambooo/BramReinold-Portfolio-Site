@@ -21,6 +21,11 @@ $(document).ready(function(e) {
     }); // end fixed header
 
     /**
+     * Responsive hamburger nav
+     */
+
+
+    /**
      * This part causes smooth scrolling using scrollto.js
      * We target all a tags inside the nav, and apply the scrollto.js to it.
      */

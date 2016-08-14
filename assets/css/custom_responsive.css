@@ -12,7 +12,7 @@ In this stylesheet will be added all media queries to make the website responsiv
 /* ========================================
 ** IPAD LANDSCAPE WIDTH and below
 ======================================== */
-@media all and (max-device-width: 1024px) {
+@media only screen and (max-width: 1024px) {
 
     header .header-wrapper,
     #content {
@@ -24,22 +24,12 @@ In this stylesheet will be added all media queries to make the website responsiv
 /* ========================================
 ** IPHONE 6 + LANDSCAPE and below
 ======================================== */
-@media all and (max-device-width: 736px) {
+@media only screen and (max-width: 736px) {
 
-    #content {
-        padding: 0 30px;
-    }
-
-    section .intro-text h1 {
-        font-size: 70px;
-    }
-    h2 {
-        font-size: 50px;
-        margin: 30px 0;
-    }
-
-    body {
-        font-size: 16px;
+    /* Hide all necessary items */
+    #main-menu-mobile,
+    .mobile-menu-close-btn {
+        display: none;
     }
 
     input, textarea {
@@ -51,30 +41,71 @@ In this stylesheet will be added all media queries to make the website responsiv
         margin: 0 25px;
     }
 
+    /*section {*/
+        /*margin-top: 30px;*/
+    /*}*/
+
+    section#intro .content h1 {
+        font-size: 40px;
+        margin: 30px 0;
+    }
+    section#intro .content p {
+        font-size: 20px;
+    }
+
+    /* ========================================
+    ** HEADER
+    ======================================== */
+    #main-menu {
+        display: none;
+    }
+    header .header-wrapper {
+        /*display: flex;*/
+        /*flex-direction: column;*/
+    }
+    nav#main-menu-mobile {
+        display: block;
+        background: #fff;
+        box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.4);
+        z-index: 999;
+        padding-bottom: 10px;
+    }
+    nav#main-menu-mobile ul li {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+
     /* ========================================
     ** PROJECT SECTION
     ======================================== */
+    /* Reset margins */
+    section#projects .projects-filter .filter.btn,
+    section#projects .projects-filter .filter.btn:first-of-type,
+    section#projects .projects-filter .filter.btn:last-of-type {
+        margin: 0;
+    }
     section#projects .projects-filter {
         margin: 0 auto;
         width: 100%;
         text-align: center;
-        margin-bottom: 80px;
+        margin-bottom: 30px;
+    }
+    section#projects .projects-filter .filter.btn,
+    section#projects .projects-filter .filter.btn:first-of-type,
+    section#projects .projects-filter .filter.btn:last-of-type{
+        display: block;
+        margin: 10px 20px;
     }
     section#projects .projects-filter strong {
         width: 100%;
         display: block;
         text-align: center;
-        font-size: 30px;
         margin-bottom: 30px;
-    }
-    section#projects .projects-filter .btn {
-        padding: 30px;
-        font-size: 30px;
     }
     section#projects .project {
         width: 100%;
-        height: 400px;
-        margin-bottom: 40px;
+        margin: 10px 0;
     }
 
     /* ========================================
@@ -89,10 +120,10 @@ In this stylesheet will be added all media queries to make the website responsiv
     }
     section#contact .contact-wrapper .contact-info h2,
     section#contact .contact-wrapper .contact-form h2 {
-        margin: 50px 0 80px 0;
+        /*margin: 50px 0 80px 0;*/
     }
     section#contact .contact-wrapper .contact-info p {
-        font-size: 40px;
+        /*font-size: 40px;*/
     }
 
     section#contact .contact-wrapper .contact-info,
@@ -105,28 +136,26 @@ In this stylesheet will be added all media queries to make the website responsiv
     section#contact .contact-wrapper .contact-form .form-user-info input,
     section#contact .contact-wrapper .contact-form textarea {
         width: 100%;
-        height: 150px;
-        font-size: 30px;
+        height: 50px;
     }
     section#contact .contact-wrapper .contact-form .form-user-info input::-webkit-input-placeholder {
-        padding-left: 30px;
+        padding-left: 20px;
     }
 
     .custom-textarea::-webkit-input-placeholder {
-        padding-top: 60px;
-        padding-left: 30px;
+        padding-top: 20px;
+        padding-left: 20px;
     }
 
-
     section#contact .contact-wrapper input[type="submit"] {
-        font-size: 50px;
+        /*font-size: 50px;*/
         padding: 20px;
         width: 100%;
-        height: 150px;
+        height: 50px;
     }
 
     footer ul li {
-        font-size: 20px;
+        font-size: 14px;
     }
 
 
