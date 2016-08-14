@@ -26,6 +26,11 @@ In this stylesheet will be added all media queries to make the website responsiv
 ======================================== */
 @media only screen and (max-width: 736px) {
 
+    /* Show all necessary items */
+    .mobile-nav-wrapper {
+        display: block;
+    }
+
     /* Hide all necessary items */
     #main-menu-mobile,
     .mobile-menu-close-btn {
