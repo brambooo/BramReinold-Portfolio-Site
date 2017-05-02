@@ -189,6 +189,9 @@ section#projects .projects-filter {
     float: right;
     margin-bottom: 30px;
 }
+section#projects .projects-filter .filter.btn {
+    cursor: pointer;
+}
 
 section#projects .projects-filter .filter.btn:first-of-type {
     margin-left: 10px;
@@ -199,6 +202,28 @@ section#projects .projects-filter .filter.btn:last-of-type {
 section#projects  .projects-filter .filter.btn.active {
     background: #3dabee;
 }
+
+section#tooling .tags {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+section#tooling .tags .tag {
+    background: #525252;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    /*width: 100%;*/
+    margin: 0;
+    cursor: pointer;
+    line-height: 40px;
+}
+section#tooling .tags .tag {
+    margin: 30px 0;
+}
+
 
 .project-container {
     text-align: justify;
@@ -230,17 +255,139 @@ section#projects  .projects-filter .filter.btn.active {
     box-shadow: 0 1px 2px #aaa;
     height: 250px;
 }
+/*#projectModal .projectModal-off {*/
+    /*z-index: 9999 !important;*/
+/*}*/
 
-.close-animatedModal {
+.close-projectModal {
     width:100%;
-    text-align: center;
+    text-align: right;
     cursor:pointer;
     color:#fff;
+    position: fixed;
+    left: -50px;
+    top: 30px;
+    z-index: 9999 !important;
+}
+.close-projectModal .btn-close-icon {
+    width: 50px;
+    height: 50px;
+}
+.close-projectModal .modal-actions i.fa {
+    font-size: 50px;
+    color: #525252;
+}
+.close-projectModal .modal-actions i.fa:first-of-type {
+    margin-right: 20px;
 }
 
-/*
-## SETUP PROJECTS IMAGES
-*/
+#projectModal {
+    background: url(../img/bg_mask_white.png) no-repeat, linear-gradient(#3dabee, #2dc2ee);
+    z-index: 9999;
+}
+#projectModal .modal-content {
+    width: 100%;
+    margin: 30px 0;
+}
+#projectModal .modal-content .modal-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#projectModal .modal-content .modal-content-wrapper h1.modal-title {
+    color: #fff;
+    height: 34px;
+    margin: 20px 0;
+}
+
+#projectModal .modal-content .modal-content-wrapper h2,
+#projectModal .modal-content .modal-content-wrapper p {
+    color: #fff;
+}
+#projectModal .modal-content .modal-content-wrapper h2 {
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+#projectModal .modal-content .modal-content-wrapper .images {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#projectModal .modal-content .modal-content-wrapper .modal-website-url {
+    margin: 0 auto;
+    background: #525252;
+}
+#projectModal .modal-content .modal-content-wrapper .modal-website-url:hover {
+    background: #eeab48;
+    color: #fff;
+}
+
+#projectModal .modal-content .modal-content-wrapper .tags {
+    display: flex;
+    margin: 30px 0;
+    justify-content: center;
+    border-top: 1px solid #fff;
+    padding-top: 30px;
+}
+#projectModal .modal-content .modal-content-wrapper .tags .tag {
+    background: #fff;
+    border: 3px solid #fff;
+    border-radius: 3px;
+    padding: 2px 3px;
+    margin-left: 5px;
+}
+#projectModal .modal-content .modal-content-wrapper .tags .tag:first-child {
+    margin-left: 0;
+}
+
+#projectModal .modal-content .modal-content-wrapper .images .image-section .image-description {
+    background: #f7f9f8;
+    url(../img/bg_mask_white.png) no-repeat, linear-gradient(#80878c, #80878c);
+    color: #80878c;
+    width: 100%;
+    padding: 30px 0;
+    margin: 50px 0;
+}
+#projectModal .modal-content .modal-content-wrapper .images .image-section .image-description h1 {
+    color: #525252;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+#projectModal .modal-content .modal-content-wrapper .images .image-section .image-description p {
+    color: #aeaeae;
+    font-size: 20px;
+}
+
+#projectModal .modal-content .modal-content-wrapper .title,
+#projectModal .modal-content .modal-content-wrapper .images .image-section .title,
+#projectModal .modal-content .modal-content-wrapper .images .image-section .title-sub {
+    color: #fff;
+    margin: 15px 0;
+}
+#projectModal .modal-content .modal-content-wrapper .images .image-section .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+#projectModal .modal-content .modal-content-wrapper .images .image-section .title {
+     font-size: 14px;
+}
+#projectModal .modal-content .modal-content-wrapper .images .image-section img {
+    margin: 10px 0;
+    border-radius: 3px;
+    border: 3px solid #fff;
+    max-width: 1000px;
+    width: 100%;
+}
+
+    /*
+    ## SETUP PROJECTS IMAGES
+    */
+.project-container .mix {
+    background-repeat: no-repeat;
+}
 .project-container .mix:nth-of-type(1) {
     background-image: url('../img/projects/bramreinold-portfolio-ronvanrielschilderwerken.jpg');
 }
@@ -261,6 +408,15 @@ section#projects  .projects-filter .filter.btn.active {
 }
 .project-container .mix:nth-of-type(7) {
     background-image: url('../img/projects/bramreinold-portfolio-shopmate.jpg');
+}
+.project-container .mix:nth-of-type(8) {
+    background-image: url('../img/projects/bramreinold-portfolio-hs.jpg');
+}
+.project-container .mix:nth-of-type(9) {
+    background-image: url('../img/projects/extra/project-game-2.jpg');
+}
+.project-container .mix:nth-of-type(10) {
+    background-image: url('../img/projects/bramreinold-portfolio-graszodengelegd.jpg');
 }
 
 
@@ -309,11 +465,11 @@ section#projects  .projects-filter .filter.btn.active {
     justify-content: center;
     height: 100%;
 }
-.actions .btn {
+.btn {
     background: #3dabee;
     text-decoration: none;
 }
-.actions .btn:hover {
+.btn:hover {
     background: #eeab48;
     color: #fff;
 }
@@ -432,6 +588,9 @@ section#contact .contact-wrapper h2 {
 }
 section#contact .contact-wrapper .contact-form {
     max-width: 600px;
+}
+section#contact .contact-wrapper .contact-form .form-user-info {
+    display: flex;
 }
 section#contact .contact-wrapper .contact-info span {
     margin-right: 10px;

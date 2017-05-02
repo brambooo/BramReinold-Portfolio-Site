@@ -9,7 +9,7 @@
 
     <meta name="webdeveloper" content="Bram Reinold - Portfolio">
     <meta name="author" content="Bram Reinold">
-    <meta name="description" content="Het portfolio van Bram Reinold, Junior Webdeveloper te Breda.">
+    <meta name="description" content="Het portfolio van Bram Reinold, Junior Full Stack Webdeveloper te Breda.">
 
     <!-- SETUP FAVICON -->
     <!--<link rel="shortcut " href="assets/img/favicon.png">-->
@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
           type="text/css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <!-- INCLUDED SCRIPTS  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -39,7 +41,7 @@
         <img data-image-src="assets/img/bram-reinold-profile-image.jpg" src="assets/img/bram-reinold-profile-image.jpg"
              alt="Bram Reinold afbeelding" class="icon-bram" data-parallax="scroll">
         <h1>Bram Reinold</h1>
-        <p>Junior Webdeveloper</p>
+        <p>Junior <strong>Full Stack Webdeveloper</strong></p>
     </div><!-- end content-->
     <div class="scroll-down">
         Bekijk het portfolio door naar beneden te scrollen!<br>
@@ -76,6 +78,34 @@
 <!-- CONTENT -->
 <div id="content" class="wrapper">
 
+    <div id="projectModal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        <div class="close-projectModal">
+            <img src="assets/img/close-black.svg" class="btn-close-icon" alt="close">
+            <!--<i class="fa fa-window-close" aria-hidden="true"></i>-->
+            <!--<i class="fa fa-times" aria-hidden="true"></i>-->
+        </div>
+
+        <div class="modal-content">
+            <div class="modal-content-wrapper">
+                <h1 class="modal-title"></h1>
+
+                <h2>Beschrijving:</h2>
+                <p class="modal-description"></p>
+
+                <br>
+
+                <a class="btn modal-website-url" href="#" target="_blank" class="btn">Bekijken</a>
+
+                <!-- TAG SECTION -->
+                <div class="tags"></div>
+
+                <!-- IMAGE SECTION-->
+                <div class="images"></div>
+            </div>
+        </div>
+    </div>
+
     <!--
     ## PROJECTS SECTION
     -->
@@ -83,18 +113,17 @@
         <div class="extra-spacing"></div>
         <div class="intro-text">
             <h1>Projecten</h1>
-            <p>Deze projecten zijn in opdracht voor iemand ontwikkeld of tijdens mijn opleiding Informatica aan de Avans Hogeschool te Breda.</p>
+            <p>Deze projecten zijn in opdracht ontwikkeld of tijdens mijn opleiding Informatica aan de Avans Hogeschool
+                te Breda.</p>
         </div>
 
         <div class="projects-filter">
             <strong>Sorteer op:</strong>
             <div class="filter btn active" data-filter="all">Alle</div>
-            <!--<div class="filter btn" data-filter=".cat-web">Websites</div>-->
-            <!--<div class="filter btn" data-filter=".cat-desktop">Desktop</div>-->
-            <!--<div class="filter btn" data-filter=".cat-app">App</div>-->
             <div class="filter btn" data-filter=".cat-eigen">Eigen</div>
             <div class="filter btn" data-filter=".cat-school">School</div>
-            <!--<div class="filter btn" data-filter=".cat-eigen">Eigen opdrachten</div>-->
+            <div class="filter btn" data-filter=".cat-stage">Stage</div>
+            <div class="filter btn" data-filter=".cat-mai-web">Bijbaan (Mai-Web)</div>
         </div>
 
         <div id="container" class="project-container">
@@ -103,8 +132,7 @@
                 <div class="project-hover">
                     <h3>Ron van Riel Schilderwerken</h3>
                     <div class="actions">
-                        <!--<a id="demo01" href="#animatedModal" class="btn">Meer info</a>-->
-                        <!--<a id="demo01" href="project.html" class="btn">Meer info</a>-->
+                        <a id="demo01" href="#animatedModal" class="btn">Meer info</a>
                         <a href="http://www.ronvanrielschilderwerken.nl" target="_blank" class="btn">Website</a>
                     </div><!-- end actions -->
                 </div><!-- end project-hover -->
@@ -162,7 +190,7 @@
 
             <div class="project mix cat-web cat-school" data-myorder="3">
                 <div class="project-hover">
-                    <h3>Simpele promotie website school project</h3>
+                    <h3>Website project school eerste periode</h3>
                     <div class="actions">
                         <!--<a href="#" class="btn">Meer info</a>-->
                         <a href="http://www.bramreinold.nl/portfolio/shopmate" target="_blank" class="btn">Website</a>
@@ -170,26 +198,78 @@
                 </div><!-- end project-hover -->
             </div><!-- end project -->
 
+            <div class="project mix cat-web cat-stage" data-myorder="3">
+                <div class="project-hover">
+                    <h3>Holiday Snipe project stage bij Adfiliate Concepts</h3>
+                    <div class="actions">
+                        <a href="http://www.holidaysnipe.com" target="_blank" class="btn">Website</a>
+                        <a id="projectHolidaySnipe" href="#projectModal" class="btn open-project-modal">Meer info</a>
+                    </div><!-- end actions -->
+                </div><!-- end project-hover -->
+            </div><!-- end project -->
+
+            <div class="project mix cat-web cat-mai-web" data-myorder="3">
+                <div class="project-hover">
+                    <div class="actions">
+                        <a id="projectGameSpringBoot" href="#projectModal" class="btn open-project-modal">Meer info</a>
+                    </div><!-- end actions -->
+                </div><!-- end project-hover -->
+            </div><!-- end project -->
+
+            <div class="project mix cat-web cat-mai-web" data-myorder="3">
+                <div class="project-hover">
+                    <div class="actions">
+                        <a id="projectGraszodengelegdWp" href="#projectModal" class="btn open-project-modal">Meer
+                            info</a>
+                    </div><!-- end actions -->
+                </div><!-- end project-hover -->
+            </div><!-- end project -->
+
+            <!--<div class="project mix cat-web cat-school" data-myorder="3">-->
+            <!--<div class="project-hover">-->
+            <!--<h3>School project - adminpaneel Avans </h3>-->
+            <!--<div class="actions">-->
+            <!--&lt;!&ndash;<a id="demo02" href="#animatedModal" class="btn">Meer info</a>&ndash;&gt;-->
+            <!--&lt;!&ndash;<a href="#comingsoon target="_blank" class="btn">Website</a>&ndash;&gt;-->
+            <!--</div>&lt;!&ndash; end actions &ndash;&gt;-->
+            <!--</div>&lt;!&ndash; end project-hover &ndash;&gt;-->
+            <!--</div>&lt;!&ndash; end project &ndash;&gt;-->
+
+            <!--<div class="project mix cat-web cat-mai-web" data-myorder="3">-->
+            <!--<div class="project-hover">-->
+            <!--<h3>Mai-Web (bijbaan) - back-end adminpaneel</h3>-->
+            <!--<div class="actions">-->
+            <!--&lt;!&ndash;<a id="demo02" href="#animatedModal" class="btn">Meer info</a>&ndash;&gt;-->
+            <!--&lt;!&ndash;<a href="#comingsoon target="_blank" class="btn">Website</a>&ndash;&gt;-->
+            <!--</div>&lt;!&ndash; end actions &ndash;&gt;-->
+            <!--</div>&lt;!&ndash; end project-hover &ndash;&gt;-->
+            <!--</div>&lt;!&ndash; end project &ndash;&gt;-->
+
+            <!--<div class="project mix cat-web cat-mai-web" data-myorder="3">-->
+            <!--<div class="project-hover">-->
+            <!--<h3>Mai-Web (bijbaan) - CIZ portaal</h3>-->
+            <!--<div class="actions">-->
+            <!--&lt;!&ndash;<a id="demo02" href="#animatedModal" class="btn">Meer info</a>&ndash;&gt;-->
+            <!--&lt;!&ndash;<a href="#comingsoon target="_blank" class="btn">Website</a>&ndash;&gt;-->
+            <!--</div>&lt;!&ndash; end actions &ndash;&gt;-->
+            <!--</div>&lt;!&ndash; end project-hover &ndash;&gt;-->
+            <!--</div>&lt;!&ndash; end project &ndash;&gt;-->
+
+            <!--<div class="project mix cat-web cat-mai-web" data-myorder="3">-->
+            <!--<div class="project-hover">-->
+            <!--<h3>Mai-Web (bijbaan) - Avans portaal</h3>-->
+            <!--<div class="actions">-->
+            <!--&lt;!&ndash;<a id="demo02" href="#animatedModal" class="btn">Meer info</a>&ndash;&gt;-->
+            <!--&lt;!&ndash;<a href="#comingsoon target="_blank" class="btn">Website</a>&ndash;&gt;-->
+            <!--</div>&lt;!&ndash; end actions &ndash;&gt;-->
+            <!--</div>&lt;!&ndash; end project-hover &ndash;&gt;-->
+            <!--</div>&lt;!&ndash; end project &ndash;&gt;-->
+
             <div class="gap"></div>
 
         </div>
 
     </section><!-- end section projects-->
-
-    <!--<div id="animatedModal">-->
-        <!--&lt;!&ndash;THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" &ndash;&gt;-->
-        <!--<div class="close-animatedModal">-->
-            <!--Sluiten-->
-        <!--</div>-->
-
-        <!--<div class="modal-content">-->
-            <!--<div class="project-title">Poezendorp van der Vorst</div>-->
-            <!--<h1>Poezendorp van der Vorst</h1>-->
-
-            <!--<h4>Projectinformatie:</h4>-->
-            <!--<h4>Ontwikkeld met:</h4>-->
-        <!--</div>-->
-    <!--</div>-->
 
     <!--
     ## PROJECTS SECTION
@@ -202,8 +282,6 @@
         </div>
 
         <div class="skills">
-            <!--https://codepen.io/tamak/pen/hzEer-->
-
             <div class="skill-bar" data-percent="90%">
                 <div class="skill-bar-title" style="background: #d35400;">
                     <span>HTML5</span>
@@ -228,20 +306,20 @@
                 <span class="skill-bar-percentage">75%</span>
             </div><!-- End skill-bar -->
 
-            <div class="skill-bar" data-percent="75%">
-                <div class="skill-bar-title" style="background: #333333;">
-                    <span>Wordpress</span>
-                </div>
-                <div class="skill-bar-loadingbar" style="background: #525252;"></div>
-                <span class="skill-bar-percentage">75%</span>
-            </div><!-- End skill-bar -->
+            <!--<div class="skill-bar" data-percent="75%">-->
+            <!--<div class="skill-bar-title" style="background: #333333;">-->
+            <!--<span>Wordpress</span>-->
+            <!--</div>-->
+            <!--<div class="skill-bar-loadingbar" style="background: #525252;"></div>-->
+            <!--<span class="skill-bar-percentage">75%</span>-->
+            <!--</div>&lt;!&ndash; End skill-bar &ndash;&gt;-->
 
             <div class="skill-bar" data-percent="65%">
                 <div class="skill-bar-title" style="background: #f0db4f;">
                     <span>JavaScript</span>
                 </div>
                 <div class="skill-bar-loadingbar" style="background: #e6ce12;"></div>
-                <span class="skill-bar-percentage">65%</span>
+                <span class="skill-bar-percentage">70%</span>
             </div><!-- End skill-bar -->
 
             <div class="skill-bar" data-percent="65%">
@@ -260,12 +338,12 @@
                 <span class="skill-bar-percentage">80%</span>
             </div><!-- End skill-bar -->
 
-            <div class="skill-bar" data-percent="90%">
+            <div class="skill-bar" data-percent="80%">
                 <div class="skill-bar-title" style="background: #690081;">
                     <span>C#</span>
                 </div>
                 <div class="skill-bar-loadingbar" style="background: #9700ba;"></div>
-                <span class="skill-bar-percentage">90%</span>
+                <span class="skill-bar-percentage">80%</span>
             </div><!-- End skill-bar -->
 
             <div class="skill-bar" data-percent="70%">
@@ -276,16 +354,45 @@
                 <span class="skill-bar-percentage">70%</span>
             </div><!-- End skill-bar -->
 
-            <div class="skill-bar" data-percent="80%">
-                <div class="skill-bar-title" style="background: #124e8c;">
-                    <span>Photoshop</span>
-                </div>
-                <div class="skill-bar-loadingbar" style="background: #4288d0;"></div>
-                <span class="skill-bar-percentage">80%</span>
-            </div><!-- End skill-bar -->
+            <!--<div class="skill-bar" data-percent="80%">-->
+            <!--<div class="skill-bar-title" style="background: #124e8c;">-->
+            <!--<span>Photoshop</span>-->
+            <!--</div>-->
+            <!--<div class="skill-bar-loadingbar" style="background: #4288d0;"></div>-->
+            <!--<span class="skill-bar-percentage">80%</span>-->
+            <!--</div>&lt;!&ndash; End skill-bar &ndash;&gt;-->
         </div>
 
     </section><!-- end section skills -->
+
+    <!--
+   ## PROJECTS SECTION
+   -->
+    <section id="tooling">
+        <div class="extra-spacing"></div>
+        <div class="intro-text">
+            <h1>Ervaring</h1>
+            <p>Technieken en tools</p>
+        </div>
+
+        <div class="tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Bootstrap</span>
+            <span class="tag">React</span>
+            <!--<span class="tag">Angular</span>-->
+            <span class="tag">Laravel</span>
+            <span class="tag">ASP.NET (CORE)</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">Wordpress</span>
+            <span class="tag">OOP</span>
+            <span class="tag">Back-end development</span>
+            <span class="tag">Front-end development</span>
+            <span class="tag">MVC</span>
+            <span class="tag">Design patterns</span>
+        </div>
+    </section>
+
 
     <section id="contact">
         <div class="extra-spacing"></div>
@@ -316,7 +423,8 @@
                                data-error-msg="Email is verplicht">
                         <input name="phone" type="text" placeholder="Telefoon">
                     </div>
-                    <textarea class="custom-textarea" name="message" cols="30" rows="1" placeholder="Bericht" required></textarea>
+                    <textarea class="custom-textarea" name="message" cols="30" rows="1" placeholder="Bericht"
+                              required></textarea>
                     <input value="Verzenden" name="submit" type="submit">
                 </form>
             </div>
